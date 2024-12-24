@@ -48,7 +48,7 @@ while not nexts.empty():
 
 
 seen = set()
-path = deque([((1, Xlen-2), None)])
+path = deque([((1, Xlen-2), None)]) # last node, cost to get to next node (no next node therefore costs are None)
 
 while path:
     pos, ncost = path.popleft()
